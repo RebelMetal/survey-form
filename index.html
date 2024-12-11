@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Umfrageformular</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<h1 id="title">Umfrageformular</h1>
+<p id="description">Bitte füllen sie das folgende Formular aus, um an unserer Umfrage teilzunehmen.</p>
+<form id="survey-form">
+    <fieldset>
+        <label id="name-label" for="name">Name: </label>
+        <input type="text" id="name" name="name" placeholder="Namen eingeben" required>
+        <label id="email-label" for="email">Email: </label>
+        <input type="email" id="email" name="email" placeholder="E-mail eingeben" required>
+        <label id="number-label" for="number">Alter: </label>
+        <input type="number" id="number" name="number" placeholder="Alter eingeben" min="16" max="120" required>
+    </fieldset>
+    <fieldset>
+        <legend>Sportler Typ (benötigt)</legend>
+        <label for="profi-Sportler"><input id="profi-sportler" type="radio" name="sportler-typ" class="inline" value="profi-sportler" checked /> Profi-Sportler</label>
+        <label for="hobby-Sportler"><input id="hobby-sportler" type="radio" name="sportler-typ" class="inline" value="hobby-sportler"/> Hobby-Sportler</label>
+        <label for="kein-sportler"><input id="kein-sportler" type="radio" name="sportler-typ" class="inline" value="kein-sportler"/> Mache kein Sport</label>
+    </fieldset>
+    <fieldset>
+        <legend>Wähle eine Sport-Marke aus</legend>
+        <select id="dropdown">
+            <option value="Adidas">Adidas</option>
+            <option value="Puma">Puma</option>
+            <option value="Nike">Nike</option>
+            <option value="Reebok">Reebok</option>
+            <option value="Fila">Fila</option>
+            <option value="Andere">Andere</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Welche Sportart betreiben Sie?</legend>
+        <label><input type="checkbox" name="sportart" value="1" class="inline"/> Fußball</label>
+        <label><input type="checkbox" name="sportart" value="2" class="inline"/> Basketball</label>
+        <label><input type="checkbox" name="sportart" value="3" class="inline"/> Tennis</label>
+        <label><input type="checkbox" name="sportart" value="4" class="inline"/> Joggen</label>
+        <label><input type="checkbox" name="sportart" value="5" class="inline"/> Cross-Fit</label>
+        <label><input type="checkbox" name="sportart" value="6" class="inline"/> Handball</label>
+        <label><input type="checkbox" name="sportart" value="7" class="inline"/> Radfahren</label>
+        <label><input type="checkbox" name="sportart" value="8" class="inline"/> Schwimmen</label>
+        <label><input type="checkbox" name="sportart" value="9" class="inline"/> Eishocky</label>
+        <label><input type="checkbox" name="sportart" value="10" class="inline"/> Kraftsport</label>
+        <label><input type="checkbox" name="sportart" value="11" class="inline"/> Handball</label>
+    </fieldset>
+    <fieldset>
+        <legend>Zusätzliche Kommentare:</legend>
+        <label for="comments"></label>
+        <textarea id="comments" name="comments" placeholder="Ihre Kommentare hier..." rows="4" cols="30"></textarea>
+    </fieldset>
+    <input id="submit" type="submit" value="Submit" />
+</form>
+</body>
+</html>
